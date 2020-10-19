@@ -471,3 +471,7 @@ body{
 {
     margin-bottom: 50px;
 }
+.jumbotron jumbotron-fluid
+{
+    margin:50px 50px 50px 50px;
+}
