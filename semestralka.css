@@ -475,3 +475,10 @@ body{
 {
     margin:50px 50px 50px 50px;
 }
+
+/*-------------------------preco-chilli----------------------------------*/
+.popis-preco-chilli h4
+{
+    color: red;
+    text-shadow:lightgray;
+}
