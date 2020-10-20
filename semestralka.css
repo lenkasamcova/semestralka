@@ -146,9 +146,11 @@ body{
     .side-menu ul
     {
         margin-left: 10px;
+        display: block;
     }
     .side-menu ul li
     {
+        display: inline;
         list-style-type: none;
         font-weight: bold;
         margin-top: 10px;
@@ -282,10 +284,19 @@ body{
     margin-left: 170px;
 }
 
+@media only screen and (max-width: 980px)
+{
+    .suggested .container img
+    {
+        width: 100%;
+    }
+}
+
 /*---------------product-top CSS-----------*/
 .product-top img
 {
     width: 250px;
+    margin: 10px 20px 20px 20px;
 
 }
 .overlay-right
@@ -320,6 +331,16 @@ body{
     margin-left: 5%;
     transition: 0.5s;
 }
+
+@media only screen and (max-width: 980px)
+{
+    .new-products .container img
+    {
+        width: 100%;
+        margin-right: 20px;
+    }
+}
+
 
 /*---------------------product-botton-CSS-------------*/
 .product-bottom .fa
@@ -457,6 +478,12 @@ body{
     border: none;
     box-shadow: none;
 }
+.single-product .container .row .col-md-7 img
+{
+    width: 30px;
+    margin-bottom: 10px;
+}
+
 /*-------------------------Product-description---------------------------*/
 .product-description h6
 {
