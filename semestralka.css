@@ -13,23 +13,23 @@ body{
     height: 57px;
     top: 0;
     position: sticky;
-    background-color: whitesmoke;
+    background-color: white;
     margin-bottom: 20px;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid tomato;
     z-index: 2;
 }
 
 .logo
 {
-    height: 50px;
-    margin: 10px 10px;
+    height: 40px;
+    margin: 5px 10px;
 }
 
 .form-control
 {
     margin-top: 9px;
     margin-left: 30px;
-    border: 2px solid red !important;
+    border: 2px solid tomato !important;
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-top-right-radius: 0 !important;
@@ -39,8 +39,8 @@ body{
 
 .input-group-text
 {
-    background: red !important;
-    border: 1px solid red !important;
+    background: tomato !important;
+    border: 1px solid tomato !important;
     margin: 8.5px 10px 3px 0 !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -75,11 +75,11 @@ body{
 
 .menu-bar ul li
 {
-    border-left: 1px solid red;
+    border-left: 1px solid white;
     list-style-type: none;
-    padding: 15px 35px;
+    padding: 16px 35px;
     text-align: center;
-    background-color: black;
+    background-color: tomato;
     cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ body{
 {
     font-size: 16px;
     font-weight: bold;
-    color: red;
+    color: white;
     text-decoration: none;
 }
 
@@ -95,134 +95,138 @@ body{
 {
     margin-right: 5px;
 }
-@media only screen and (max-width: 980px)
-{
-    .top-nav-bar
-    {
+@media only screen and (max-width: 980px) {
+    .top-nav-bar {
         height: 118px;
-        border-bottom:0;
+        border-bottom: 0;
     }
-    .search-box
-    {
+
+    .search-box {
         width: 100%;
     }
-    .menu-bar
-    {
+
+    .menu-bar {
         width: 100%;
     }
-    .menu-bar ul
-    {
+
+    .menu-bar ul {
         margin: 10px 0;
         width: 100%;
     }
-    .menu-bar ul li
-    {
+
+    .menu-bar ul li {
         height: 57px;
         width: 100%;
     }
 
-    .fa-sign-in
-    {
+    .fa-sign-in {
         margin-right: 10px;
     }
 
-    .menu-bar ul li
-    {
+    .menu-bar ul li {
         height: 57px;
         width: 100%
     }
-
+}
     /*------------------------------------side-menu----------------------------------------*/
-    .side-menu
-    {
-        height: 60%;
-        width: 15%;
-        font-size: 14px;
-        float: left;
-        z-index: 2;
-        background-color: darkgray !important;
+    .header .wrapper a,
+    .header .wrapper a:hover,
+    .header .wrapper a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
     }
+.wrapper
+{
+    display: flex;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#sidebar
+{
+    min-width:250px;
+    max-width:250px;
+    background: white;
+    transition: all 0.3s;
+}
+#sidebar .active
+{
+    margin-left: -250px;
+}
+#sidebar .sidebar-header
+{
+    padding:20px;
+    background: tomato;
+}
+#sidebar ul.components
+{
+    padding: 20px 0;
+    border-bottom: 1px solid tomato;
+}
+#sidebar ul li a
+{
+  padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover
+{
+    color: tomato;
+    background: white;
+}
+#sidebar ul li .active>a,
+a[aria-expanded="true"]
+{
+    color: #fff;
+    background: tomato;
+}
+a[data-toggle="collapse"]
+{
+    position: relative;
+}
+.dropdown-toggle::after
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+ul ul a
+{
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: white;
+}
+.btn-info
+{
+    z-index: 2;
+    padding:0 0 0 0;
+    background-color: tomato !important;
+    color: tomato;
+    border: 0 solid tomato !important;
+}
 
-    .side-menu ul
-    {
-        margin-left: 10px;
-        display: block;
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        width: 100%;
     }
-    .side-menu ul li
-    {
-        display: inline;
-        list-style-type: none;
-        font-weight: bold;
-        margin-top: 10px;
-        cursor: pointer;
+    #sidebar.active{
+        width: 100%;
+        margin-left: 0;
     }
-    .side-menu ul li:hover
-    {
-        color: red;
-    }
-    .side-menu ul li ul
-    {
-        display:none;
-        z-index:10;
-        top:77px;
-
-    }
-    .side-menu ul li:hover ul
-    {
-        display: block;
-        height: 400px;
-        margin-left: 14%;
-        padding:0 50px 10px 10px ;
-        position: fixed;
-        background: darkgray;
-        box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
-    }
-
-    .fa-angle-right
-    {
-        margin-top: 4px;
-        margin-right: 8px;
-        float: right;
-    }
-
-    #menu-btn,#close-btn
-    {
-        font-size: 30px;
-        margin:10px;
-        color: orange;
-        display: none;
-    }
-
-    @media only screen and (max-width: 980px) {
-        .side-menu {
-            width: 34%;
-            z-index: 20;
-            top: 133px;
-            position: fixed;
-            font-size: 10px;
-            display: none;
-        }
-
-        .side-menu ul li ul {
-            top: 133px;
-        }
-
-        .side-menu ul li:hover ul {
-            top: 31%;
-        }
-
-        #menu-btn {
-            display: block;
-        }
+    #sidebarCollapse{
     }
 }
+
 
 /*---------------------------slider CSS---------------------------*/
 .slider
 {
-    width: 85%;
-    margin-left: 15%;
-    padding: 0 10px;
+    width: 100%;
+    padding-right:10px;
 }
 .carousel
 {
@@ -236,7 +240,7 @@ body{
 {
     .slider
     {
-        width: 100%;
+        display: none;
         margin-left: 0;
     }
 }
@@ -338,6 +342,11 @@ body{
     {
         width: 100%;
         margin-right: 20px;
+    }
+    .product-top img
+    {
+        width: 100%;
+        margin: 20px 20px 20px 20px;
     }
 }
 
@@ -484,7 +493,7 @@ body{
     margin-bottom: 10px;
 }
 
-/*-------------------------Product-description---------------------------*/
+    /*-------------------------Product-description---------------------------*/
 .product-description h6
 {
     margin-top: 50px;
@@ -497,10 +506,6 @@ body{
 .product-description hr
 {
     margin-bottom: 50px;
-}
-.jumbotron jumbotron-fluid
-{
-    margin:50px 50px 50px 50px;
 }
 
 /*-------------------------preco-chilli----------------------------------*/
@@ -515,7 +520,7 @@ body{
 {
     background: #010615;
 }
-.cela-strana .domcek .a href
+.cela-strana .domcek .a
 {
     text-decoration: none;
     color: white;
@@ -608,7 +613,6 @@ body{
 .box .content
 {
     position: absolute;
-    bottom:0;
     left:10px;
     right:10px;
     bottom:10px;
