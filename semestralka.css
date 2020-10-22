@@ -512,7 +512,7 @@ ul ul a
 .popis-preco-chilli h4
 {
     color: red;
-    text-shadow:lightgray;
+
 }
 
 /*----------------------o-nas-----------------------------------------*/
@@ -641,7 +641,6 @@ ul ul a
 {
     font-size: 14px;
     color: #fff;
-    font-weight: 150;
     line-height: 20px;
     letter-spacing: 2px;
 }
