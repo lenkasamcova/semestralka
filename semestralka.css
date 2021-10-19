@@ -15,7 +15,7 @@ body{
     position: sticky;
     background-color: white;
     margin-bottom: 20px;
-    border-bottom: 2px solid tomato;
+    border-bottom: 2px solid dimgrey;
     z-index: 2;
 }
 
@@ -29,7 +29,7 @@ body{
 {
     margin-top: 9px;
     margin-left: 30px;
-    border: 2px solid tomato !important;
+    border: 2px solid dimgrey !important;
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-top-right-radius: 0 !important;
@@ -39,8 +39,8 @@ body{
 
 .input-group-text
 {
-    background: tomato !important;
-    border: 1px solid tomato !important;
+    background: dimgrey !important;
+    border: 1px solid dimgrey !important;
     margin: 8.5px 10px 3px 0 !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -79,7 +79,7 @@ body{
     list-style-type: none;
     padding: 16px 35px;
     text-align: center;
-    background-color: tomato;
+    background-color: dimgrey;
     cursor: pointer;
 }
 
@@ -156,12 +156,13 @@ body{
 #sidebar .sidebar-header
 {
     padding:20px;
-    background: tomato;
+
+    background: dimgrey;
 }
 #sidebar ul.components
 {
     padding: 20px 0;
-    border-bottom: 1px solid tomato;
+    border-bottom: 1px solid dimgrey;
 }
 #sidebar ul li a
 {
@@ -171,14 +172,14 @@ body{
 }
 #sidebar ul li a:hover
 {
-    color: tomato;
+    color: dimgrey;
     background: white;
 }
 #sidebar ul li .active>a,
 a[aria-expanded="true"]
 {
     color: #fff;
-    background: tomato;
+    background: dimgrey;
 }
 a[data-toggle="collapse"]
 {
@@ -202,9 +203,9 @@ ul ul a
 {
     z-index: 2;
     padding:0 0 0 0;
-    background-color: tomato !important;
-    color: tomato;
-    border: 0 solid tomato !important;
+    background-color: dimgrey !important;
+    color: dimgrey;
+    border: 0 solid dimgrey !important;
 }
 
 
@@ -457,7 +458,7 @@ ul ul a
 }
 .single-product h2
 {
-    color: dimgrey;
+    color: red;
 }
 .single-product .fa
 {
